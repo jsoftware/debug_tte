@@ -1,8 +1,9 @@
 NB. tte.ijs
 NB. TTE (Tacit-To-Explicit) - an explicator for tacit verbs
+NB. HAND-UPDATED: Thursday, 19 September 2013  07:22:23
 
 coclass 'tte'
-require 'misc strings'
+require 'strings'
 
 NB. ========== STARTER VERB ==========
 
@@ -191,6 +192,7 @@ QQ=: '"'
 QT=: ''''
 SL=: '/'
 SP=: ' '
+UL=: '_'
 
 NB. ========== ADVERBS ==========
 
@@ -592,6 +594,18 @@ end.
 z
 )
 
+default=: 4 : 0
+	NB. (Copied from j602: ~system/main/misc.ijs)
+	NB.*default v set default value
+	NB. name default value
+	NB. set global name to value if not already defined
+nc=. 4!:0 <x
+if. _1=nc do. ".x,'=: y'
+elseif. _2=nc do. 'invalid name: ',":,x
+end.
+empty''
+)
+
 deflt=: 4 : 0
 	NB. The "default" Expander
 	NB. generates unexpanded [x] u y - given tacit u
@@ -855,6 +869,8 @@ smoutput ZU
 smoutput '>>> ZT result of running T with [X],Y'
 smoutput ZT
 )
+
+vv=: ":@|:@,:
 
 xmake=: 3 : 0
 	NB. Makes correct (x) inside an Expander verb
