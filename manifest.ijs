@@ -2,7 +2,7 @@ NB. tte manifest
 
 CAPTION=: 'Explicate a given tacit verb'
 
-VERSION=: '0.0.2'
+VERSION=: '0.0.3'
 
 FILES=: 0 : 0
 manifest.ijs
@@ -19,4 +19,4 @@ RELEASE=: 'j602 j801 j802'
 
 LABCATEGORY=: 'Debug'
 
-PLATFORMS=: 'win linux darwin android'
+PLATFORMS=: ''
