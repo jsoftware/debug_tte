@@ -19,4 +19,4 @@ RELEASE=: 'j602 j801 j802'
 
 LABCATEGORY=: 'Debug'
 
-PLATFORMS=: 'linux win darwin android'
+PLATFORMS=: ''
