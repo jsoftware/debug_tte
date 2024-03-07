@@ -181,6 +181,7 @@ NB=: 'NB.'
 NY=: ;:'y'
 XY=: ;:'x y'
 UNSET=: '<UNSET>'
+VT=: 11{a.   NB. converted to LF for display, since LF is a word of its own
 
 BL=: '['
 BR=: ']'
@@ -538,7 +539,7 @@ comment=: 4 : 0
 if. NOCOMMENT do. y return. end.
 z=. >{:y	NB. Extract and open the last sentence
 if. 1 e. NB E. z do.
-  z=. z,LF,TAB,TAB,NB,SP,x
+  z=. z,VT,TAB,TAB,NB,SP,x
 else.
   z=. z,TAB,NB,SP,x
 end.

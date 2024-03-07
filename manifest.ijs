@@ -2,7 +2,7 @@ NB. tte manifest
 
 CAPTION=: 'Explicate a given tacit verb'
 
-VERSION=: '0.0.8'
+VERSION=: '0.0.9'
 
 FILES=: 0 : 0
 manifest.ijs
